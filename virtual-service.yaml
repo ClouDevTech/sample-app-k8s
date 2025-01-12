@@ -33,7 +33,7 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /
+        prefix: /argo-cd
     route:
     - destination:
         host: argocd-server
