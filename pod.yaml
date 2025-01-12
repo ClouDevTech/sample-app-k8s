@@ -1,0 +1,21 @@
+apiVersion: v1 
+kind: Pod              
+metadata:               
+  name: springboot-app
+  namespace: java
+  labels:               
+    app: springboot-app
+spec:                   
+  containers:
+    - name: springboot-app
+      image: isurupathumherath/cloudev_java:v6.0
+      imagePullPolicy: Always
+      resources:
+        limits:
+          memory: "250Mi"
+          cpu: "200m"
+        requests:
+          memory: "50Mi"
+          cpu: "100m"
+      ports:
+      - containerPort: 8080
