@@ -1,8 +1,8 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: jenkins
-  namespace: devops-tools
+  name: springboot-app
+  namespace: java
 spec:
   hosts:
   - "*"
@@ -11,9 +11,9 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /jenkins
+        prefix: /hello-world
     route:
     - destination:
-        host: jenkins-service
+        host: springboot-app
         port:
           number: 80
