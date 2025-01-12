@@ -29,7 +29,7 @@ spec:
   hosts:
   - "*"
   gateways:
-  - default/springboot-gateway
+  - default/springboot-gateway-2
   http:
   - match:
     - uri:
