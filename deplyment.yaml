@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: springboot-container
-          image: isurupathumherath/cloudev_java:v6.0
+          image: us-central1-docker.pkg.dev/cloudev-tech-trail/cloudev-practical/hello-world:latest
           ports:
           - containerPort: 8080  
-      # imagePullSecrets:
-      #   - name: my-registry-secret
+      imagePullSecrets:
+        - name: artifact-registry-secret
