@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: springboot-container
-          image: us-central1-docker.pkg.dev/cloudev-tech-trail/cloudev-practical/hello-world:latest
+          image: us-central1-docker.pkg.dev/cloudev-tech-trail/cloudev-practical/hello-world:v1
           ports:
           - containerPort: 8080  
       imagePullSecrets:
